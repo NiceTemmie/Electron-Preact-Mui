@@ -1,6 +1,6 @@
 {
   "name": "electron-preact-mdc",
-  "productName":"Electron-Preact-MDC",
+  "productName": "Electron-Preact-MDC",
   "version": "1.0.0",
   "description": "A fully commented Boilerplate/Quickstart for Electron framework, using Preact and Material design (compiling with Webpack)",
   "main": "electron.js",
@@ -11,7 +11,7 @@
     "webpack:prod": "webpack --config webpack.prod.js",
     "build:linux": "webpack --config webpack.prod.js && electron-packager . --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds --ignore='src/.*|webpack[^\\\\]*\\.js$|\\.babelrc'",
     "build:macOS": "webpack --config webpack.prod.js && electron-packager . --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds --ignore='src/.*|webpack[^\\\\]*\\.js$|\\.babelrc'",
-    "build:win":"webpack --config webpack.prod.js && electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --ignore='src/.*|webpack[^\\\\]*\\.js$|\\.babelrc'"
+    "build:win": "webpack --config webpack.prod.js && electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --ignore='src/.*|webpack[^\\\\]*\\.js$|\\.babelrc'"
   },
   "keywords": [
     "Electron",
@@ -27,6 +27,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.4",
     "preact": "^10.5.14"
   },
   "devDependencies": {
@@ -39,7 +42,6 @@
     "electron-packager": "^15.4.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "preact-material-components": "^1.6.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.1",
     "webpack-cli": "^4.8.0",

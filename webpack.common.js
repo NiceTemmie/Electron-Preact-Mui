@@ -15,14 +15,14 @@ module.exports = {
   //Output config
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'compiled'),
     clean: true,
   },
 
   //Generate automatically the html file, so you don't have to worry about it
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Electron-Preact-MDC',
+      title: 'Electron-Preact-Mui',
     }),
   ],
 
@@ -44,5 +44,14 @@ module.exports = {
      },
    ],
  },
+
+ resolve: {
+    alias: {
+      "react": "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat",     // Must be below test-utils
+     " react/jsx-runtime": "preact/jsx-runtime"
+    },
+  },
 
 };

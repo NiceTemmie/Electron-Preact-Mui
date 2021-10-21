@@ -37,7 +37,7 @@ function createWindow () {
   }
 
   //Load the index.html of the app.
-  mainWindow.loadFile('./dist/index.html')
+  mainWindow.loadFile('./compiled/index.html')
 
 }
 
