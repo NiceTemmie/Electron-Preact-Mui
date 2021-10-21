@@ -1,5 +1,5 @@
-# Electron-Preact-MDC
-A fully commented Boilerplate/Quickstart for Electron framework, using Preact and Material design (compiling with Webpack)
+# Electron-Preact-Mui
+A fully commented Boilerplate/Quickstart for Electron framework, using Preact and Mui (Materials design framework for React) (compiling with Webpack)
 
 ### Installation
 Download or copy the repo and just ```npm install```
@@ -34,6 +34,8 @@ npm run build:macOS
 ## Additionals notes (should read)
 The goal of this 'project' is to make a very simple, understandable and clean boilerplate for any electron app.
 Feel free to update or report bugs as I may be a little inexperienced with front-end framework like webpack or babel.
+
+The boilerplate should be fully compatible with React package as the aliasing is aready setup due to Mui
 
 As mentionned earlier I didn't test the executable for MacOS and Windows so it may be complety broken: I can't tell. Linux one tho is working perfectly for me !
 
